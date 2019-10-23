@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+		
+
+	
+	
+	<servlet>
+		<servlet-name>Recievescriptdata</servlet-name>
+		<servlet-class>com.test.Recievescriptdata</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Recievescriptdata</servlet-name>
+		<url-pattern>/Recievescriptdata</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>Forgetpwd</servlet-name>
+		<servlet-class>com.util.Forgetpwd</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Forgetpwd</servlet-name>
+		<url-pattern>/Forgetpwd</url-pattern>
+	</servlet-mapping>
+	
+	
+<!-- Forget Password -->
+	
+	
+	<servlet>
+		<servlet-name>ResetRecievescriptdata</servlet-name>
+		<servlet-class>com.test.ResetRecievescriptdata</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResetRecievescriptdata</servlet-name>
+		<url-pattern>/ResetRecievescriptdata</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	<servlet>
+		<servlet-name>NewUser</servlet-name>
+		<servlet-class>com.user.NewUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>NewUser</servlet-name>
+		<url-pattern>/NewUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UserLogin</servlet-name>
+		<servlet-class>com.user.UserLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserLogin</servlet-name>
+		<url-pattern>/UserLogin</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>UserHome</servlet-name>
+		<servlet-class>com.user.UserHome</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserHome</servlet-name>
+		<url-pattern>/UserHome</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>UserProfile</servlet-name>
+		<servlet-class>com.user.UserProfile</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserProfile</servlet-name>
+		<url-pattern>/UserProfile</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditUserProfile</servlet-name>
+		<servlet-class>com.user.EditUserProfile</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditUserProfile</servlet-name>
+		<url-pattern>/EditUserProfile</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>CalculateBMI</servlet-name>
+		<servlet-class>com.user.CalculateBMI</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CalculateBMI</servlet-name>
+		<url-pattern>/CalculateBMI</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	<servlet>
+		<servlet-name>ChangePass</servlet-name>
+		<servlet-class>com.user.ChangePass</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChangePass</servlet-name>
+		<url-pattern>/ChangePass</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	<servlet>
+		<servlet-name>AdminLogin</servlet-name>
+		<servlet-class>com.admin.AdminLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminLogin</servlet-name>
+		<url-pattern>/AdminLogin</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>AdminHome</servlet-name>
+		<servlet-class>com.admin.AdminHome</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminHome</servlet-name>
+		<url-pattern>/AdminHome</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>AdminProfile</servlet-name>
+		<servlet-class>com.admin.AdminProfile</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminProfile</servlet-name>
+		<url-pattern>/AdminProfile</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditAdminProfile</servlet-name>
+		<servlet-class>com.admin.EditAdminProfile</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditAdminProfile</servlet-name>
+		<url-pattern>/EditAdminProfile</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ChangePassAdmin</servlet-name>
+		<servlet-class>com.admin.ChangePassAdmin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChangePassAdmin</servlet-name>
+		<url-pattern>/ChangePassAdmin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ViewUsers</servlet-name>
+		<servlet-class>com.admin.ViewUsers</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewUsers</servlet-name>
+		<url-pattern>/ViewUsers</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>ViewImages</servlet-name>
+		<servlet-class>com.admin.ViewImages</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewImages</servlet-name>
+		<url-pattern>/ViewImages</url-pattern>
+	</servlet-mapping>
+	
+</web-app>

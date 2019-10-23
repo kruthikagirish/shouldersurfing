@@ -1,0 +1,226 @@
+    <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+   <%@ page import="com.util.Utility" %> 
+      <%@ page import="com.DAOFactory.User" %> 
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" class="no-js" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Graphical_Authentication_System</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" data-name="skins">
+    <link rel="stylesheet" href="css/layout/wide.css" data-name="layout">
+    <link rel="stylesheet" href="css/animate.css" type="text/css"/>
+
+    <link rel="stylesheet" type="text/css" href="css/switcher.css" media="screen" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--Start Header-->
+<header id="header">
+    <div id="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 top-info hidden-xs">
+                   
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <div id="logo-bar">
+        <div class="container">
+            <div class="row">
+                <!-- Logo / Mobile Menu -->
+                <div  class="col-lg-3 col-sm-3 ">
+                    <div id="logo">
+                         <h1><a href="index.jsp"><img alt="logo" style="width: 1200px; height:100px;" src="images/title.png"/></a></h1>
+                    </div>
+                </div>
+                <!-- Navigation
+================================================== -->
+                
+            </div>
+        </div>
+    </div>
+      <div id="top-bar" style="position:absolute; top: 170px; width:100%;"  >
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 top-info hidden-xs" >
+                        
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    
+</header>
+<!--End Header-->
+
+<!--start wrapper-->
+<section class="wrapper">
+   <!--  <section class="page_head">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="page_title">
+                       
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <div class="container">
+        <div class="row sub_content">
+             <div class="col-lg-5 col-sm-5 col-lg-offset-1">
+                <div class="dividerHeading">
+                    <h4><span>Admin Login Form</span></h4>
+                </div>
+                <form id="loginform" method="post" name="loginform" action="<%=request.getContextPath()%>/AdminLogin">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <input type="text" name="name" class="form-control" placeholder="UserId">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                            <input type="password" name="pass"  class="form-control" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Remember me
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" name="submit" value="signin" class="btn btn-default btn-lg button">Sign in</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-5 col-sm-5 col-lg-offset-1">
+                <div class="dividerHeading">
+                    <h4><span> User Login Form</span></h4>
+                </div>
+                <form id="loginform" method="post" name="loginform" action="<%=request.getContextPath()%>/UserLogin">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <input type="text" name="name" class="form-control" placeholder="UserId">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                            <input type="password" name="pass" class="form-control" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Remember me
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" name="submit" value="signin" class="btn btn-default btn-lg button">Sign in</button>
+                        <button type="submit"  name="submit" value="newuser" class="btn btn-default btn-lg button">New User</button>
+                        <button type="submit"  name="submit" value="forgotpass" class="btn btn-default btn-lg button">Forgot Password?</button>
+                    </div>
+                </form>
+            </div>
+                </div>
+    </div>
+</section>
+<!--end wrapper-->
+
+<!--start footer-->
+
+<!--end footer-->
+
+<section class="footer_bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+               
+            </div>
+
+           
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/retina-1.1.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script> <!-- jQuery cookie -->
+<script type="text/javascript" src="js/styleswitch.js"></script> <!-- Style Colors Switcher -->
+<script type="text/javascript" src="js/jquery.smartmenus.min.js"></script>
+<script type="text/javascript" src="js/jquery.smartmenus.bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.js"></script><!-- Popover-JS -->
+<script type="text/javascript" src="js/jflickrfeed.js"></script>
+<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="js/swipe.js"></script>
+<script type="text/javascript" src="js/jquery-scrolltofixed-min.js"></script>
+
+<script src="js/main.js"></script>
+
+<!-- Start Style Switcher -->
+
+<!-- End Style Switcher -->
+<%if(Utility.parse(request.getParameter("no"))==7)
+    {%>
+	<script type="text/javascript">
+	alert('User Login  Failure!!!!!')
+	
+	</script>
+	
+ <%   }%>
+ 
+ <%if(Utility.parse(request.getParameter("no"))==2)
+    {%>
+	<script type="text/javascript">
+	alert('Admin Login  Failure!!!!!')
+	
+	</script>
+	
+ <%   }%>
+ 
+ <%if(Utility.parse(request.getParameter("no"))==8)
+    {%>
+	<script type="text/javascript">
+	alert('User added and Password Set Successfully...!')
+	
+	</script>
+	
+ <%   }%>
+ 
+ <%if(Utility.parse(request.getParameter("no"))==12)
+    {%>
+	<script type="text/javascript">
+	alert('Password Reset Successfully...!')
+	
+	</script>
+	
+ <%   }%>
+ 
+</body>
+</html>
